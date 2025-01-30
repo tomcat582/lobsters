@@ -76,7 +76,7 @@ class HomeController < ApplicationController
     }
 
     @title = "Newest Stories"
-    @above = {partial: "stories/subnav"}
+    @above = Components::StoriesSubnav
 
     @rss_link = {
       title: "RSS 2.0 - Newest Items",
@@ -121,7 +121,7 @@ class HomeController < ApplicationController
     }
 
     @title = "Recent Stories"
-    @above = {partial: "stories/subnav"}
+    @above = Components::StoriesSubnav
     @below = {partial: "recent"}
 
     # our list is unstable because upvoted stories get removed, so point at /newest.rss
@@ -288,7 +288,7 @@ class HomeController < ApplicationController
     else
       "Top Stories of the Past #{length[:intv]}"
     end
-    @above = "stories/subnav"
+    @above = Components::StoriesSubnav
 
     @rss_link ||= {
       title: "RSS 2.0 - " + @title,

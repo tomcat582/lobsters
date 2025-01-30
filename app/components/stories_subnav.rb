@@ -2,7 +2,9 @@
 
 class Components::StoriesSubnav < Components::Base
   def view_template
-    h1 { "StoriesSubnav" }
-    p { "Find me in app/components/stories_subnav.rb" }
+    Subnav do |nav|
+      nav.item(newest_path) { 'Newest' }
+      nav.item(top_path) { 'Top' }
+    end
   end
 end
