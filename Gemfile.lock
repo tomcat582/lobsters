@@ -1,3 +1,17 @@
+GIT
+  remote: https://github.com/phlex-ruby/phlex
+  revision: a19b1e8574559733451a4a1c76bcd21c6a869509
+  specs:
+    phlex (2.0.0.rc1)
+
+GIT
+  remote: https://github.com/phlex-ruby/phlex-rails
+  revision: 4cd9cb311fc77674b9733a83b12edec3db88e4b4
+  specs:
+    phlex-rails (2.0.0.rc1)
+      phlex (= 2.0.0.rc1)
+      railties (>= 6.1, < 9)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -472,6 +486,8 @@ DEPENDENCIES
   oauth
   parslet
   pdf-reader
+  phlex!
+  phlex-rails!
   propshaft
   prosopite
   puma

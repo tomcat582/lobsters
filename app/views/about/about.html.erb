@@ -1,4 +1,4 @@
-<% render partial: 'about/subnav' %>
+<%= render Components::AboutSubnav %>
 
 <div class="box wide">
   <%- raise "Site owner: You need to delete app/views/home/about.html.erb and write your own about page" if Rails.env.production? and Rails.application.name != 'Lobsters' -%>

@@ -18,6 +18,10 @@ gem "scenic-mysql_adapter"
 gem "activerecord-typedstore"
 gem "propshaft"
 gem "importmap-rails", "~> 2.0"
+gem "phlex", git: "https://github.com/phlex-ruby/phlex"
+gem "phlex-rails", git: "https://github.com/phlex-ruby/phlex-rails"
+
+
 
 # js
 gem "json"
